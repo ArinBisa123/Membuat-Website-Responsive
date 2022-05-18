@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Bleu Cooking Class</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=PT+Sans+Narrow:wght@400;700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Maison Bleu</h2>
+          <p class="sub-heading">Cooking Class</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="class">Baking Class</h4>
+          <p class="schedule">MON to TUE</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="class">Pasta Class</h4>
+          <p class="schedule">FRI to SAT</p>
+        </div>
+      </header>
+      <nav class="menu">
+        <div class="menu-toggle">
+          <!-- span buat pembentuk garis hamburger menu -->
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Maison Bleu</h1>
+        </div>
+        <ul class="class-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Class</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
+      <section class="level-program">
+        <div class="level">
+          <div class="icon">&#10024</div>
+          <h3>Basic Course</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, quisquam.</p>
+        </div>
+        <div class="level">
+            <div class="icon">&#127385</div>
+            <h3>Intermediate Course</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, quisquam.</p>
+          </div>
+          <div class="level">
+            <div class="icon">&#128175</div>
+            <h3>Advanced Course</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, quisquam.</p>
+          </div>
+      </section>
+      <section class="gallery">
+          <h2>Gallery Activity</h2>
+          <img src="img/1.png">
+          <img src="img/2.png">
+          <img src="img/3.png">
+          <img src="img/4.png">
+          <img src="img/5.png">
+          <img src="img/6.png">
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
